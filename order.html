@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vins Workshop - Order</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header>
+  <h1>Vins Workshop</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="works.html">Works</a></li>
+      <li><a href="order.html">Order</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="order-form">
+    <h2>Place Your Order</h2>
+    <p>
+      For inquiries or custom orders, fill in the details below. Alternatively, you can email us directly.
+    </p>
+    <form action="submit_order.php" method="post">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="order">Swords Interested:</label>
+      <textarea id="order" name="order" rows="5" required></textarea>
+
+      <button type="submit">Submit Order</button>
+    </form>
+    <p>
+      Or email us directly at: <a href="mailto:vin@vinsworkshop.com">vin@vinsworkshop.com</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2025 Vins Workshop. All rights reserved.</p>
+</footer>
+</body>
+</html>
